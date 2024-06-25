@@ -1,0 +1,30 @@
+html {
+    font-family: sans-serif;
+    font-size: 17px;
+  }
+  
+  /* A3P2 CSS */
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
