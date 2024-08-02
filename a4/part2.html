@@ -1,0 +1,64 @@
+<!-- HTML for Part  -->
+<!-- Liam Springgay -->
+<!-- 2024-08-02 -->
+<!-- INFT-1206 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 2</title>
+    <link rel="stylesheet" href="part2.css">
+  </head>
+<body>
+  <script src="part2.js"></script>
+  <h1>Part 2 Image Gallery</h1>
+
+  <div class="full-img">
+    <img
+      class="displayed-img"
+      src="gallery-start/images/pic1.jpg"
+      alt="Closeup of a blue human eye" />
+
+      <img
+      class="displayed-img"
+      src="gallery-start/images/pic2.jpg"
+      alt="Painting" />
+
+      <img
+      class="displayed-img"
+      src="gallery-start/images/pic3.jpg"
+      alt="Purple flowers" />
+
+      <img
+      class="displayed-img"
+      src="gallery-start/images/pic4.jpg"
+      alt="Cave Paintings" />
+
+      <img
+      class="displayed-img"
+      src="gallery-start/images/pic5.jpg"
+      alt="Butterfly on leaf" />
+
+    <div class="overlay"></div>
+    <button class="dark">Darken</button>
+  </div>
+  
+  <script>
+    function changeImage(src) {
+      document.getElementById('main-image').src = src;
+    
+    }
+
+    function darkenImage() {
+  let img = document.getElementById('main-image');
+  img.style.filter = img.style.filter === 'brightness(50%)' ? 'brightness(100%)' : 'brightness(50%)';
+}
+
+    
+  </script>
+  <div class="thumb-bar"></div>
+    
+</body>
+</html>
